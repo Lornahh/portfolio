@@ -1,24 +1,4 @@
-# portfolio
+# Zach's Portfolio
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Welcome to Zach's Portfolio, written in Vue with Vuetify and other tooling
+Hope you enjoy.
