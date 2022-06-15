@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1 class="projectsPageTitle">Projects</h1>
-    <v-carousel max-width="80%"  hide-delimiters>
-      <v-carousel-item v-for="(project, index) in projects" :key="index" cover >
+    <v-carousel max-width="80%" hide-delimiters>
+      <v-carousel-item v-for="(project, index) in projects" :key="index" cover>
         <v-sheet tile height="100%">
           <div class="fill-height">
             <v-card-title class="projectTitle">
@@ -49,7 +49,8 @@ export default {
         {
           title: "Basic React Eshop",
           image: "https://picsum.photos/600/600",
-          description: "Basic Skeleton of an EShop built with React, along with other tools.",
+          description:
+            "Basic Skeleton of an EShop built with React, along with other tools.",
           link: "https://www.google.com",
           technologyMdi: "mdi-react",
           technologyColor: "blue",
@@ -57,7 +58,8 @@ export default {
         {
           title: "Burger Maker",
           image: "https://picsum.photos/800/800",
-          description: "This is a description for project 3",
+          description:
+            "Burger maker made in plain JavaScript with other people from my AP Computer Science class.",
           link: "https://www.google.com",
           technologyMdi: "mdi-language-javascript",
           technologyColor: "orange",
@@ -88,6 +90,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem; 
+  padding: 1.5rem;
 }
 </style>

@@ -3,9 +3,15 @@
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     <v-app-bar-title>Zach's Portfolio</v-app-bar-title>
     <v-spacer />
-    <v-btn icon href="/">
-      <v-icon>mdi-home</v-icon>
-    </v-btn>
+
+    <v-tooltip anchor="bottom">
+      <template v-slot:activator="{ props }">
+        <v-btn icon href="/">
+          <v-icon v-bind="props">mdi-home</v-icon>
+        </v-btn>
+      </template>
+      <span>Return Home</span>
+    </v-tooltip>
   </v-app-bar>
   <v-navigation-drawer v-model="drawer" temporary>
     <v-list>
