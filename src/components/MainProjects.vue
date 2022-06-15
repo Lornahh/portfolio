@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1 class="projectsPageTitle">Projects</h1>
-    <v-carousel max-width="80%" hide-delimiters>
-      <v-carousel-item v-for="(project, index) in projects" :key="index" cover>
+    <v-carousel max-width="80%" height="48rem" hide-delimiters>
+      <v-carousel-item v-for="(project, index) in projects" :key="index">
         <v-sheet tile height="100%">
           <div class="fill-height">
             <v-card-title class="projectTitle">
@@ -10,20 +10,17 @@
               <v-icon :color="project.technologyColor" class="technologyIcon">{{
                 project.technologyMdi
               }}</v-icon>
-              <v-btn icon>
-                <v-icon>mdi-github</v-icon>
-              </v-btn>
             </v-card-title>
-            <v-img :src="project.image" height="50%"></v-img>
+            <v-img :src="project.image" height="60%"></v-img>
             <v-card-text class="projectDescription">{{
               project.description
             }}</v-card-text>
-            <!-- <v-card-actions>
-              <v-btn color="primary" href="{{project.link}}">
+            <v-card-actions>
+              <v-btn color="primary" href="{{project.link}}" class="githubLink" variant="plain">
                 <v-icon>mdi-github</v-icon>
                 View on Github
               </v-btn>
-            </v-card-actions> -->
+            </v-card-actions>
           </div>
         </v-sheet>
       </v-carousel-item>
@@ -41,7 +38,7 @@ export default {
           title: "Vue Todo List",
           image: "https://picsum.photos/700/700",
           description:
-            "A todo list written in Vue js, with vuetify. Uses features like local storage, filters, and sorting.",
+            "A todo list written in Vue.js, with vuetify. Uses features like local storage, filters, and sorting.",
           link: "https://github.com/Lornahh/vue-todo",
           technologyMdi: "mdi-vuejs",
           technologyColor: "green",
@@ -74,7 +71,7 @@ export default {
 .projectTitle {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 1rem 3rem 1.5rem 3rem;
 }
 .technologyIcon {
@@ -84,12 +81,22 @@ export default {
   display: flex;
   justify-content: center;
   align-content: center;
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 .projectDescription {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
+  font-size: 1.5rem;
+}
+.githubLink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.mainProjects {
+  background-color: #000000;
 }
 </style>
