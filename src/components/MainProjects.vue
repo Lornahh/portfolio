@@ -16,7 +16,12 @@
               project.description
             }}</v-card-text>
             <v-card-actions>
-              <v-btn color="primary" href="{{project.link}}" class="githubLink" variant="plain">
+              <v-btn
+                color="primary"
+                href="{{project.link}}"
+                class="githubLink"
+                variant="plain"
+              >
                 <v-icon>mdi-github</v-icon>
                 View on Github
               </v-btn>
@@ -90,7 +95,7 @@ export default {
   padding: 1.5rem;
   font-size: 1.5rem;
 }
-.githubLink{
+.githubLink {
   display: flex;
   justify-content: center;
   align-items: center;
