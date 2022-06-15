@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="projectsPageTitle">Projects</h1>
-    <v-carousel max-width="80%" v-model="model" border:ripple="true">
+    <v-carousel max-width="80%" v-model="model">
       <v-carousel-item v-for="(project, index) in projects" :key="index">
         <v-sheet tile height="100%">
           <div class="fill-height">

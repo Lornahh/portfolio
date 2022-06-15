@@ -2,6 +2,10 @@
   <v-app-bar theme="dark" prominent>
     <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     <v-app-bar-title>Zach's Portfolio</v-app-bar-title>
+    <v-spacer></v-spacer>
+    <v-btn icon href="/">
+      <v-icon>mdi-home</v-icon>
+    </v-btn>
   </v-app-bar>
   <v-navigation-drawer v-model="drawer" temporary>
     <v-list>
